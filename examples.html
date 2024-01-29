@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parallax-Beispiele</title>
-    <link rel="stylesheet" href="WeltraumEntdeckung_Modified.css" />
+    <link rel="stylesheet" href="parallax.css" />
     <!-- Aktualisierter Link zur CSS-Datei -->
   </head>
   <body>
@@ -23,11 +23,8 @@
             <li class="navbar__item">
               <a href="/" class="navbar__links"> Home </a>
             </li>
-            <li class="navbar__item">
-              <a href="/examples.html" class="navbar__links"> Beispiele </a>
-            </li>
             <li class="navbar__btn">
-              <a href="/tour.html" class="button"> Tour </a>
+              <a href="/examples.html" class="button"> Beispiele </a>
             </li>
           </ul>
         </div>
@@ -273,39 +270,40 @@
         </div>
           <!-- Ende: Codesnippets für Parallax-Scrolling Beipiel 3-->
       </section>
-      <!-- Beginn: Beispiel 3 (Fisch und Blasen) -->
+      <!-- Ende: Beispiel 3 (Fisch und Blasen) -->
 
+      <!-- Beginn: Beispiel 4 (Fisch und Koralle) -->
       <section id="example4" class="parallax">
         <h1>Beispiel 4: Verschiebung in der Z-Achse</h1>
         <p>Bei diesem Beispiel bewegt sich der Fisch hinter die Koralle.</p>
         <img src="images/Fisch1.png" id="fisch4" />
         <img src="images/koralle1.png" id="koralle1">
-        <div class="parallax__exampleTab" id="exampleTab3"><div class="exampleWindow">
-          <!-- Beginn: Header für Codesnippets des Parallax-Scrolling Beipiel 3-->
+        <div class="parallax__exampleTab" id="exampleTab4"><div class="exampleWindow">
+          <!-- Beginn: Header für Codesnippets des Parallax-Scrolling Beipiel 4-->
           <div class="exampleTab">
             <button
               class="tablLinks"
-              onclick="openExampleTab('html3')"
+              onclick="openExampleTab('html4')"
             >
               html
             </button>
             <button
               class="tabLinks"
-              onclick="openExampleTab('css3')"
+              onclick="openExampleTab('css4')"
             >
               css
             </button>
             <button
               class="tabLinks"
-              onclick="openExampleTab('js3')"
+              onclick="openExampleTab('js4')"
             >
               js
             </button>
           </div>
-          <!-- Ende: Header für Codesnippets des Parallax-Scrolling Beipiel 3-->
+          <!-- Ende: Header für Codesnippets des Parallax-Scrolling Beipiel 4 -->
   
-          <!-- Beginn: Codesnippets für Parallax-Scrolling Beipiel 3-->
-          <div id="html3" class="tabcontent">
+          <!-- Beginn: Codesnippets für Parallax-Scrolling Beipiel 4 -->
+          <div id="html4" class="tabcontent">
             <p>
               &lt;div class="parallax"&gt; <br />
               &lt;img src="images/Fisch1.png" id="fisch1" /&gt; <br />
@@ -314,7 +312,7 @@
               &lt;/div&gt;
             </p>
           </div>
-          <div id="css3" class="tabcontent">
+          <div id="css4" class="tabcontent">
             <p>
               .parallax { <br />
               position: relative; <br />
@@ -335,7 +333,7 @@
               } <br />
             </p>
           </div>
-          <div id="js3" class="tabcontent">
+          <div id="js4" class="tabcontent">
             <p>
               let fisch1 = document.getElementById("fisch1"); <br />
               let bubble1 = document.getElementById("blasen1"); <br />
@@ -354,6 +352,7 @@
           </div>
         </div>
       </section>
+      <!-- Ende: Beispiel 4 (Fisch und Koralle) -->
     </div>
 
     <!-- Footer -->
@@ -361,7 +360,6 @@
       <p>© 2024 Jan Luca Winterhoff, Sebastian Paul, Christopher Pelster</p>
     </footer>
 
-    <script src="WeltraumEntdeckung_Modified.js"></script>
-    <!-- Aktualisierter Link zur JavaScript-Datei -->
+    <script src="app.js"></script>
   </body>
 </html>
