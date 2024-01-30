@@ -100,8 +100,8 @@
                 let parallaxMoveRight = (scrollHeight / windowHeight) *
                 windowWidth + "px"; <br />
                 &nbsp; <br />
-                fisch1.style.translate = "translateX(" + parallaxMoveRight + ")"; <br />
-                fisch1.style.translate = "translateY(" + parallaxStay + ")"; <br />
+                fisch1.style.transform = "translateX(" + parallaxMoveRight + ")"; <br />
+                fisch1.style.transform = "translateY(" + parallaxStay + ")"; <br />
                 }); <br />
               </p>
             </div>
@@ -177,7 +177,7 @@
             window.addEventListener("scroll", () => { <br />
             let scrollHeight = window.scrollY; <br />
             let parallaxMoveDown = scrollHeight + (1 / 10) * scrollHeight +"px"; <br />
-            fisch1.style.translate = "translateY(" + parallaxMoveDown + ")"; <br />
+            fisch1.style.transform = "translateY(" + parallaxMoveDown + ")"; <br />
             }); <br />
           </p>
         </div>
@@ -261,9 +261,9 @@
               let scrollHeight = window.scrollY; <br />
               let parallaxMoveRight = scrollHeight + (1 / 10) * scrollHeight +"px"; <br />
               let parallaxMoveUp = -(scrollHeight + (1 / 10) * scrollHeight) +"px"; <br />
-              fisch1.style.translate = "translateY(" + parallaxMoveDown + ")"; <br />
-              bubble1.style.translate = "translateY(" + parallaxMoveUp + ")"; <br />
-              bubble2.style.translate = "translateY(" + parallaxMoveUp + ")"; <br />
+              fisch1.style.transform = "translateY(" + parallaxMoveDown + ")"; <br />
+              bubble1.style.transform = "translateY(" + parallaxMoveUp + ")"; <br />
+              bubble2.style.transfrom = "translateY(" + parallaxMoveUp + ")"; <br />
               }); <br />
             </p>
           </div>
@@ -307,8 +307,7 @@
             <p>
               &lt;div class="parallax"&gt; <br />
               &lt;img src="images/Fisch1.png" id="fisch1" /&gt; <br />
-              &lt;img src="images/bubbles1.png" id="blasen1" /&gt; <br />
-              &lt;img src="images/bubbles2.png" id="blasen2" /&gt; <br />
+              &lt;img src="images/koralle1.png" id="koralle1" /&gt; <br />
               &lt;/div&gt;
             </p>
           </div>
@@ -336,17 +335,13 @@
           <div id="js4" class="tabcontent">
             <p>
               let fisch1 = document.getElementById("fisch1"); <br />
-              let bubble1 = document.getElementById("blasen1"); <br />
-              let bubble2 = document.getElementById("blasen2"); <br />
+              let koralle1 = document.getElementById("koralle1"); <br />
               <br />
               &nbsp; <br>
               window.addEventListener("scroll", () => { <br />
               let scrollHeight = window.scrollY; <br />
-              let parallaxMoveRight = scrollHeight + (1 / 10) * scrollHeight +"px"; <br />
-              let parallaxMoveUp = -(scrollHeight + (1 / 10) * scrollHeight) +"px"; <br />
-              fisch1.style.translate = "translateY(" + parallaxMoveDown + ")"; <br />
-              bubble1.style.translate = "translateY(" + parallaxMoveUp + ")"; <br />
-              bubble2.style.translate = "translateY(" + parallaxMoveUp + ")"; <br />
+              let parallaxMoveBehind = scrollHeight + (1 / 10) * scrollHeight +"px"; <br />
+              fisch1.style.transform = "translateZ(" + parallaxMoveBehind + ")"; <br />
               }); <br />
             </p>
           </div>

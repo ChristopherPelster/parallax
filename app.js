@@ -20,6 +20,7 @@ let fisch3 = document.getElementById("fisch3");
 let fisch4 = document.getElementById("fisch4");
 let blasen1 = document.getElementById("blasen1");
 let blasen2 = document.getElementById("blasen2");
+let koralle1 = document.getElementById("koralle1");
 
 let scaleFactor = 1;
 
@@ -66,7 +67,11 @@ window.addEventListener("scroll", () => {
       break;
 
     case 3:
-      fisch4.style.transform = "translateZ(" + offsetFisch + "px)";
+      if (offsetFisch < 250) {
+        fisch4.style.transform = "translateX(" + offsetFisch + "px)";
+      } else {
+        koralle1.style.transform = "translateZ(" + offsetFisch + "px)";
+      }
       break;
 
     default:
